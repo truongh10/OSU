@@ -1,0 +1,15 @@
+﻿1)  What hash functions did you choose and why (Hint: Cryptographic or non- cryptographic)? What is the output range of the hash functions? What is the size of the Bloom filter in each case?
+I chose md5 (output range: 128), sha1 (output range: 160), sha224 (output range: 224), sha512 (output range: 512), sha3_256 (output range: 256). The size of the bloom filter in this case the size of dictionary times 8.
+
+
+2)  How long does it take for your Bloom Filter to check 1 password in each case (3 hashes vs 5 hashes)? Why does one perform better than other if any?
+  
+
+It is because sha512 and sha3_256 are the slowest functions.
+3)  What is the probability of False Positive in your Bloom Filter in each case? What is the probability of False Negative in your Bloom Filter?
+False negatives are not possible in this case, therefore it is 0%.
+false positive = 
+False positive for 3 hashes: 
+False positive for 3 hashes: 
+4. How can you reduce the rate of False Positives?
+In order to reduce the rate  of the False Positives, we can increase the number of the hash functions and the  size of the bloom filter.
